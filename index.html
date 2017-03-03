@@ -1,0 +1,2749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>周其志 demo</title>
+	<link rel="stylesheet" type="text/css" href="style/reset.css">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+<!-- 	<script type="text/javascript">
+		window.onload = function () {
+			var xianshi = document.getElementById('welcome');
+			xianshi.onmouseover = function () {
+				var buxianshi = document.getElementById('hide');
+				buxianshi.style.display = "block";
+			};
+		};
+	</script> -->
+</head>
+<body>
+	<header>
+		<div class="header_top">
+			<span>喵，欢迎来天猫</span>
+			<a href="https://login.tmall.com/?spm=875.7931836/B.a2226mz.1.JMe35G&redirectURL=https%3A%2F%2Fwww.tmall.com%2F">请登录</a>
+			<a href="https://register.tmall.com/?spm=875.7931836/B.a2226mz.2.JMe35G">免费注册</a>
+			<div class="my_taobao_wrapper">
+				<a class="my_taobao" href="https://i.taobao.com/my_taobao.htm?spm=875.7931836/B.a2226mz.3.JMe35G">
+					我的淘宝
+					<b></b>					
+				</a>
+				<ul hidden>
+					<li><a href="https://trade.taobao.com/trade/itemlist/list_bought_items.htm?spm=875.7931836/B.a2226mz.4.JMe35G&t=20110530">已买到的宝贝</a></li>
+					<li><a href="https://trade.taobao.com/trade/itemlist/list_sold_items.htm?spm=875.7931836/B.a2226mz.5.JMe35G&t=20110530">已卖出的宝贝</a></li>
+				</ul>
+			</div>
+			<a class="my_brand" href="https://mybrand.tmall.com/?spm=875.7931836/B.a2226mz.7.JMe35G&scm=1048.1.1.1"> 我关注的品牌</a>
+			<a class="my_cart" href="https://cart.tmall.com/cart/myCart.htm?spm=875.7931836/B.a2226mz.8.JMe35G&from=btop">购物车 <strong>0</strong> 件</a>
+			<div class="my_favorate_wrapper">
+				<a class="my_favorate" href="https://shoucang.taobao.com/shop_collect_list.htm?spm=875.7931836/B.a2226mz.9.JMe35G&scjjc=c1">
+					收藏夹
+					<b></b>
+				</a>
+				<ul hidden>
+					<li><a href="https://shoucang.taobao.com/item_collect.htm?spm=875.7931836/B.a2226mz.10.JMe35G">收藏的宝贝</a></li>
+					<li><a href="https://shoucang.taobao.com/shop_collect_list.htm?spm=875.7931836/B.a2226mz.11.JMe35G0">收藏的店铺</a></li>
+				</ul>
+			</div>
+			<span>|</span>
+			<a class="mobile_version" href="https://pages.tmall.com/wow/portal/act/app-download?spm=875.7931836/B.a2226mz.12.JMe35G&scm=1027.1.1.1">
+				手机版
+				<i></i>
+				<img hidden src="images/app.png" alt="QR code for Tmall App">
+			</a>
+			<a href="https://www.taobao.com/?spm=875.7931836/B.a2226mz.13.JMe35G">淘宝网</a>
+			<a href="https://b.tmall.com/?spm=875.7931836/B.a2226mz.14.JMe35G">企业购</a>
+			<div class="support_wrapper">
+				<a class="support" href="">
+					商家支持
+					<b></b>
+				</a>
+				<ul hidden>				
+					<li>
+					商家：
+						<ul>
+							<li><a href="">商家中心</a></li>
+							<li><a href="">商家入驻</a></li>
+							<li><a href="">运营服务</a></li>
+							<li><a href="">商家品控</a></li>
+							<li><a href="">商家工具</a></li>
+							<li><a href="">商家规则</a></li>
+							<li><a href="">天猫智库</a></li>
+							<li><a href="">喵言喵语</a></li>
+						</ul>
+					</li>
+					<li class="help">
+					帮助：
+						<ul>
+							<li><a href="">帮助中心</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<!-- support_wrapper end -->
+			<div class="site_nav_wrapper">
+				<a class="site_nav" href="">
+					网站导航
+					<b></b>
+				</a>
+				<ul hidden>
+					<li class="hot_recom">
+						<h2>热点推荐 Hot</h2>
+						<ul>
+							<li><a href="">天猫超市</a></li>
+							<li><a href="">喵鲜生</a></li>
+							<li class="new"><a href="">科技新品</a></li>
+							<li class="hot"><a href="">女装新品</a></li>
+							<li><a href="">酷玩街</a></li>
+							<li class="hot"><a href="">内衣新品</a></li>
+							<li><a href="">试美妆</a></li>
+							<li><a href="">运动新品</a></li>
+							<li class="hot"><a href="">时尚先生</a></li>
+							<li><a href="">精明妈咪</a></li>
+							<li class="new"><a href="">吃乐会</a></li>
+							<li><a href="">企业采购</a></li>
+							<li><a href="">会员积分</a></li>
+							<li><a href="">天猫国际</a></li>
+						</ul>
+					</li>
+					<li class="market">
+						<h2>行业市场 Market</h2>		
+						<ul>
+							<li><a href="">美妆</a></li>
+							<li><a href="">电器</a></li>
+							<li class="hot"><a href="">女装</a></li>
+							<li class="hot"><a href="">男装</a></li>
+							<li><a href="">女鞋</a></li>
+							<li><a href="">男鞋</a></li>
+							<li class="hot"><a href="">内衣</a></li>
+							<li><a href="">箱包</a></li>
+							<li><a href="">运动</a></li>
+							<li><a href="">母婴</a></li>
+							<li><a href="">家装</a></li>
+							<li><a href="">医药</a></li>
+							<li><a href="">食品</a></li>
+							<li class="new"><a href="">配饰</a></li>
+							<li><a href="">汽车</a></li>
+						</ul>
+					</li>
+					<li class="fashion_brand">
+						<h2>品牌风尚 Brand</h2>		
+						<ul>
+							<li><a href="">尚天猫</a></li>
+							<li><a href="">大牌街</a></li>
+							<li><a href="">潮牌街</a></li>
+							<li><a href="">天猫原创</a></li>
+							<li><a href="">什么牌子好</a></li>
+						</ul>
+					</li>
+					<li class="service_help">
+					    <h2>服务指南 Help</h2>    
+						<ul>
+							<li><a href="">帮助中心</a></li>
+							<li><a href="">品质保障</a></li>
+							<li><a href="">特色服务</a></li>
+							<li><a href="">7天退换货</a></li>
+						</ul>
+					</li>
+				</ul>				
+			</div>
+			<!-- site_nav_wrapper end -->
+		</div>
+		<!-- header_top end -->
+		<div class="logo_search">
+			<img src="images/logo_promo.gif" align="Tmall logo image">
+			<div class="search_area">
+				<input type="text" placeholder="大牌新品抢先看"><button type="submit" value="search_button">搜索</button>
+				<ul>
+					<li><a href="#">针织衫女</a></li>
+					<li><a href="#">外套</a></li>
+					<li><a href="#">四件套</a></li>
+					<li><a href="#">笔记本电脑</a></li>
+					<li><a href="#">吸顶灯</a></li>
+					<li><a href="#">文胸</a></li>
+					<li><a href="#">小白鞋</a></li>
+					<li><a href="#">双肩包</a></li>
+					<li><a href="#">面膜</a></li>
+				</ul>
+			</div>
+		</div>
+		<nav>			
+			<div class="category">
+				<h2>商品分类</h2>
+				<ul>
+					<li>
+						<h4><a href="">女装 </a><a href=""> /内衣</a></h4>
+						<ul hidden>
+							<li>
+								<h3>当季流行 &gt;</h3>
+								<ul>
+									<li><a href="">2017春季新品</a></li>
+									<li><a href="">商场同款</a></li>
+									<li><a href="">气质连衣裙</a></li>
+									<li><a href="">羽绒服</a></li>
+									<li><a href="">中长款毛呢</a></li>
+									<li><a href="">百搭休闲裤</a></li>
+									<li><a href="">2017内衣新品</a></li>
+									<li><a href="">内衣商场同款</a></li>
+									<li><a href="">男士内裤</a></li>
+									<li><a href="">春夏家居服</a></li>
+									<li><a href="">无痕文胸</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>精选上装 &gt;</h3>
+								<ul>
+									<li><a href="">羽绒服</a></li>
+									<li><a href="">毛呢外褂</a></li>
+									<li><a href="">毛衣</a></li>
+									<li><a href="">针织衫</a></li>
+									<li><a href="">衬衫</a></li>
+									<li><a href="">风衣</a></li>
+									<li><a href="">短外套</a></li>
+									<li><a href="">卫衣</a></li>
+									<li><a href="">小西装</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>浪漫裙装 &gt;</h3>
+								<ul>
+									<li><a href="">连衣裙</a></li>
+									<li><a href="">蕾丝连衣裙</a></li>
+									<li><a href="">印花连衣裙</a></li>
+									<li><a href="">真丝连衣裙</a></li>
+									<li><a href="">半身裙</a></li>
+									<li><a href="">百褶裙</a></li>
+									<li><a href="">牛仔裙</a></li>
+									<li><a href="">背心裙</a></li>
+									<li><a href="">a字裙</a></li>
+									<li><a href="">棉麻连衣裙</a></li>
+									<li><a href="">蕾丝半身裙</a></li>
+									<li><a href="">包臀裙</a></li>
+									<li><a href="">长袖连衣裙</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>女士下装 &gt;</h3>
+								<ul>
+									<li><a href="">牛仔裤</a></li>
+									<li><a href="">休闲裤</a></li>
+									<li><a href="">哈伦裤</a></li>
+									<li><a href="">背带裤</a></li>
+									<li><a href="">小脚裤</a></li>
+									<li><a href="">西装裤</a></li>
+									<li><a href="">打底裤</a></li>
+									<li><a href="">阔腿裤</a></li>
+									<li><a href="">短裤</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>特色女装 &gt;</h3>
+								<ul>
+									<li><a href="">时尚气质套装</a></li>
+									<li><a href="">休闲运动套装</a></li>
+									<li><a href="">精选妈妈装</a></li>
+									<li><a href="">大码女装</a></li>
+									<li><a href="">职业套装</a></li>
+									<li><a href="">优雅旗袍</a></li>
+									<li><a href="">精致礼服</a></li>
+									<li><a href="">婚纱</a></li>
+									<li><a href="">唐装</a></li>
+									<li><a href="">小码女装</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>保暖基础 &gt;</h3>
+								<ul>
+									<li><a href="">男士保暖</a></li>
+									<li><a href="">女士保暖</a></li>
+									<li><a href="">保暖加厚加绒</a></li>
+									<li><a href="">男士内裤</a></li>
+									<li><a href="">女士内裤</a></li>
+									<li><a href="">吊带背心</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>家居服 &gt;</h3>
+								<ul>
+									<li><a href="">睡衣</a></li>
+									<li><a href="">睡衣秋款</a></li>
+									<li><a href="">睡衣冬款</a></li>
+									<li><a href="">珊瑚绒睡衣</a></li>
+									<li><a href="">情侣睡衣</a></li>
+									<li><a href="">男士睡衣</a></li>
+									<li><a href="">睡袍冬款</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>文胸塑身 &gt;</h3>
+								<ul>
+									<li><a href="">文胸</a></li>
+									<li><a href="">文胸套装</a></li>
+									<li><a href="">无钢圈</a></li>
+									<li><a href="">聚拢型</a></li>
+									<li><a href="">塑身裤</a></li>
+									<li><a href="">塑身连体衣</a></li>
+								</ul>
+							</li>
+							<li>
+								<h3>袜类 &gt;</h3>
+								<ul>
+									<li><a href="">袜子</a></li>
+									<li><a href="">男士袜子</a></li>
+									<li><a href="">加绒丝袜</a></li>
+									<li><a href="">女士船袜</a></li>
+								</ul>
+							</li>
+						</ul>
+						<ul class="brand_logo" hidden>
+							<li><a href=""><img src="images/goelia.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/mb.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/orain.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/chuyu.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/tw.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/bershka.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/pullbear.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/bnb.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/my.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/ports.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/gain.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/mnf.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/threegun.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/aimer.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/miiow.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/realsilk.jpg" alt=""></a></li>
+							<li><a href=""><img src="images/ladywear.jpg" alt=""></a></li>
+						</ul>
+					</li>
+					<li>
+						<h4><a href="">男装 </a><a href="">/运动户外</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">女鞋 </a><a href="">/男鞋 </a><a href="">/箱包</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">化妆品 </a><a href="">/个人护理</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">腕表 </a><a href="">/珠宝饰品 </a><a href="">/眼镜</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">手机 </a><a href="">/数码</a> <a href=""> /电脑办公</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">母婴玩具</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">零食 </a><a href="">/进口食品</a> /茶酒<a href=""></a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">生鲜水果</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">大家电 </a><a href="">/生活电器</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">家具建材</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">汽车 </a><a href="">/配件 </a><a href="">/用品</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">家纺 </a><a href="">/家饰</a><a href="">/鲜花</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">医药保健</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">厨具 </a><a href="">/收纳</a> <a href="">/宠物</a></h4>
+						<ul hidden></ul>
+					</li>
+					<li>
+						<h4><a href="">图书音像</a></h4>
+						<ul hidden></ul>
+					</li>
+				</ul>
+			</div>
+			<ul>
+				<li><a href="">天猫超市<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">天猫国际<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">天猫会员<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">品牌街<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">电器城<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">喵鲜生<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">医药馆<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">营业厅<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">魅力惠<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">飞猪旅行<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+				<li><a href="">苏宁易购<img hidden src="images/cat_up.png" alt="cat_up animation"></a></li>
+			</ul>
+		</nav>
+		<!-- nav end -->
+	</header>
+	<!-- header end -->
+	<main>
+		<div class="banner_wrapper">
+			<ul>
+				<li>
+					<a href="">
+						<!-- <img src="images/slide_2.jpg" alt=""> -->
+					</a>
+					<a class="banner_sm_top" href="">
+						<strong>小米芯未来</strong>
+						<span>3.3小米和米家新品日</span>
+						<img src="images/mi.png">
+					</a>
+					<a class="banner_sm_bottom" href="">
+						<strong>彩电家装节</strong>
+						<span>订金100抵150元</span>
+						<img src="images/mi.png">
+					</a>
+				</li>
+				<li>
+					<a href=""></a>
+					<a class="banner_sm_top" href="">
+						<strong>小米芯未来</strong>
+						<span>3.3小米和米家新品日</span>
+						<img src="images/mi.png">
+					</a>
+					<a class="banner_sm_bottom" href="">
+						<strong>彩电家装节</strong>
+						<span>订金100抵150元</span>
+						<img src="images/mi.png">
+					</a>
+				</li>
+				<li>
+					<a href=""></a>
+					<a class="banner_sm_top" href="">
+						<strong>小米芯未来</strong>
+						<span>3.3小米和米家新品日</span>
+						<img src="images/mi.png">
+					</a>
+					<a class="banner_sm_bottom" href="">
+						<strong>彩电家装节</strong>
+						<span>订金100抵150元</span>
+						<img src="images/mi.png">
+					</a>
+				</li>
+				<li>
+					<a href="">	</a>
+					<a class="banner_sm_top" href="">
+						<strong>小米芯未来</strong>
+						<span>3.3小米和米家新品日</span>
+						<img src="images/mi.png">
+					</a>
+					<a class="banner_sm_bottom" href="">
+						<strong>彩电家装节</strong>
+						<span>订金100抵150元</span>
+						<img src="images/mi.png">
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<!-- <img src="images/slide_2.jpg" alt=""> -->
+					</a>
+					<a class="banner_sm_top" href="">
+						<strong>小米芯未来</strong>
+						<span>3.3小米和米家新品日</span>
+						<img src="images/mi.png">
+					</a>
+					<a class="banner_sm_bottom" href="">
+						<strong>彩电家装节</strong>
+						<span>订金100抵150元</span>
+						<img src="images/mi.png">
+					</a>
+				</li>
+			</ul>
+			<div>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+			<div class="login_banner">
+				<img src="images/login.png" alt="login image">
+				<p>Hi~你好!</p>
+				<a href="" class="please_login">请登录</a>
+				<a href="" class="free_register">免费注册&gt;</a>
+				<p class="return">退货保障</p>
+				<p class="loan">花呗分期</p>
+				<p class="refund">极速退款</p>
+				<a href="" class="privileges">更多特权&gt;</a>
+				<p>推荐活动</p>
+				<a href="">
+					<img src="images/tea.jpg" alt="tea promo"><br>
+					<p>青柳钱茶 </p>
+					<span> 1500积分</span>
+				</a>
+			</div>
+		</div>
+		<!-- banner_wrapper end -->
+
+		<div class="display_area">
+			<div class="live">
+				<video hidden id="live_video" controls src="images/live_1.mp4" width="488" height="275"></video>
+				<div class="live_poster_big">
+					<img class="poster_big" src="images/poster_1.jpg" alt="tea">
+					<p class="live_or_not"><i></i>直播</p>
+					<img src="images/play.png" alt="play button">
+					<h2>听一片茶叶的故事 抢头彩行大运</h2>
+				</div>
+				<ul class="live_poster_small">
+					<li>
+						<a href=""><img class="poster_small" src="images/poster_1.jpg" alt="tea">
+						<img src="images/play.png" alt="play button">
+						<h4>听一片茶叶的故事 抢头彩行大运</h4></a>
+					</li>
+					<li>
+						<a href=""><img class="poster_small" src="images/poster_2.jpg" alt="car">
+						<img src="images/play.png" alt="play button">
+						<h4>全新 BMW 1 系运动轿车</h4></a>
+					</li>
+					<li>
+						<a href=""><img class="poster_small" src="images/poster_3.jpg" alt="handset">
+						<img src="images/play.png" alt="play button">
+						<h4>小米Mix概念手机 小米松果芯片发布会 </h4></a>
+					</li>
+					<li>
+						<a href=""><img class="poster_small" src="images/poster_4.jpg" alt="tea">
+						<img src="images/play.png" alt="play button">
+						<h4>听一片茶叶的故事 抢头彩行大运</h4></a>
+					</li>
+					<li>
+						<a href=""><img class="poster_small" src="images/poster_5.jpg" alt="car">
+						<img src="images/play.png" alt="play button">
+						<h4>古筝 零基础 入门</h4></a>
+					</li>
+					<li>
+						<a href=""><img class="poster_small" src="images/poster_6.jpg" alt="handset">
+						<img src="images/play.png" alt="play button">
+						<h4>一粒大米的成长史 </h4></a>
+					</li>
+				</ul>
+				<div class="live_notice">
+					<div class="notice_left"></div>
+					<div class="notice_right">					
+						<div class="live_notice_info">
+							<p>听佟丽娅自白，1折秒同款新品</p>
+							<span>2月28日</span>
+						</div>
+						<div class="live_notice_info">
+							<p>FILAxSTAPLE潮流派对</p>
+							<span>互动赢现金红包</span>
+						</div>
+						<div class="live_notice_info">
+							<p>西南钓王&and;达人主播 开钓节新品测评</p>
+							<span>2月28日</span>
+						</div>
+						<div class="live_notice_info">
+							<p>美妆界奥斯卡 天猫金妆奖震撼登场</p>						
+							<span>2月28日</span>
+						</div>
+						<div class="live_notice_info">
+							<p>大型呼吸防护公益直播间</p>
+							<span>2月28日</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="brand_promo">
+			    <div class="change_next">
+			    	<a href="">
+			    	    <img src="images/rotate.png" alt="change next">
+			    		<p>换一批</p>
+			    	</a>
+			    </div>
+				<ul>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_2.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>					
+				</ul>
+				<!-- ul 1 end -->
+				<ul>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_1.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+				</ul>
+				<!-- ul 2 brand_promo end  -->
+				<ul>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_3.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>					
+				</ul>
+				<!-- ul 3 brand_promo end -->
+				<ul>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>
+					<li>
+						<div class="brand_image">
+							<img src="images/brand_4.jpg" alt="xiaomi">
+						</div>
+						<div class="promo_voucher">
+							<a href=""><img src="images/display_like.png"></a>
+							<p>优惠券 10元</p>
+							<a href="">点击进入</a>
+						</div>
+					</li>					
+				</ul>
+				<!-- ul 4 brand_promo end -->
+
+			</div>
+		</div>
+		<!-- display_area end -->
+		<ul class="classification">
+			<li>
+				<h2><i></i>手机酷玩</h2>
+				<ul>
+					<li>
+						<a href=""><h3>手机馆</h3>
+						<p>小米Mix青春版</p>
+						<div><img src="images/classification_img_1.png" alt=""></div></a>
+					</li>
+					<li>
+						<a href=""><h3>酷玩街</h3>
+						<p>潮炫创意智能</p>
+						<div><img src="images/classification_img_2.jpg" alt=""></div></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2><i></i>潮流前沿</h2>
+				<ul>
+					<li>
+						<a href=""><h3>焕新</h3>
+						<p>品牌精选新品</p>
+						<div><img src="images/classification_img_3.png" alt=""></div></a>
+					</li>
+					<li>
+						<a href=""><h3>全球时尚</h3>
+						<p>大牌精致时尚</p>
+						<div><img src="images/classification_img_4.jpg" alt=""></div></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2><i></i>品质生活</h2>
+				<ul>
+					<li>
+						<a href=""><h3>必抢</h3>
+						<p>巨超值 卖疯啦</p>
+						<div><img src="images/classification_img_5.jpg" alt=""></div></a>
+					</li>
+					<li>
+						<a href=""><h3>喵鲜生</h3>
+						<p>全球好品甄选</p>
+						<div><img src="images/classification_img_6.jpg" alt=""></div></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2><i></i>国际海购</h2>
+				<ul>
+					<li>
+						<a href=""><h3>识货</h3>
+						<p>全球最热好货</p>
+						<div><img src="images/classification_img_7.jpg" alt=""></div></a>
+					</li>
+					<li>
+						<a href=""><h3>天猫西选</h3>
+						<p>官方进口直采</p>
+						<div><img src="images/classification_img_8.jpg" alt=""></div></a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<h2><i></i>个性推荐</h2>
+				<ul>
+					<li>
+						<a href=""><h3>囤货</h3>
+						<p>居家必备</p>
+						<div><img src="images/classification_img_9.jpg" alt=""></div></a>
+					</li>
+					<li>
+						<a href=""><h3>精明主妇</h3>
+						<p>生活更easy</p>
+						<div><img src="images/classification_img_10.jpg" alt=""></div></a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+		<!-- ul.classification end -->
+		<div class="ad_1 ad">
+			<a href="">
+				<img src="images/ad_1.jpg" alt="ad 1">
+			</a>
+		</div>
+
+		<div class="slogan_sector fashion_beauty">
+			<div class="slogan_sector_top">
+				<h2><i></i>美丽人生<span> FASHION &amp; BEAUTY</span></h2>
+				<ul>
+					<li><a href="">连衣裙</a></li>
+					<li><a href="">T恤男</a></li>
+					<li><a href="">美容护肤</a></li>
+					<li><a href="">休闲男鞋</a></li>
+					<li><a href="">黄金项链</a></li>
+					<li><a href="">单鞋</a></li>
+					<li><a href="">女包</a></li>
+					<li><a href="">文胸</a></li>
+					<li><a href="">大牌腕表</a></li>
+				</ul>
+			</div>
+			<div class="slogan_sector_bottom">
+				<div class="slogan_bottom_1">
+					<div class="banner_slogan">
+						<a href=""><img src="images/fashion_beauty.jpg" alt=""></a>
+						<div hidden>
+							<a href=""></a>
+						</div>
+						<div class="msg_move">
+							<div>
+							<a href="">
+								<p>千万豪礼送不停 &gt;</p>
+								<p>100元优惠券立刻送 &gt;</p>
+								<p>买一送17 &gt;</p>
+							</a>
+							</div>
+						</div>
+					</div>
+					<div class="promo_slogan">
+					  <a href="">
+						<div class="text_promo">
+							<h2>美妆个护预售会场</h2>
+							<p>定金1元抵100</p>
+						</div>
+						<div>
+							<img src="images/cat_up.png" alt="beauty promo background">
+						</div>
+					  </a>
+					</div>
+				</div>
+				<!-- slogan_bottom_1 end -->
+				<ul class="slogan_bottom_2 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>春夏新款上市</h3>
+							<p>健康非海绵文胸</p>
+							<img src="images/fashion_beauty_1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>春装上新</h3>
+							<p>迷彩修身夹克</p>
+							<img src="images/fashion_beauty_2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>增高休闲鞋真皮</h3>
+							<p>店长推荐款</p>
+							<img src="images/fashion_beauty_3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>七匹狼男士钱包</h3>
+							<p>商务男士真皮短款钱包</p>
+							<img src="images/fashion_beauty_4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>2.13周二上新</h3>
+							<p>春装新品</p>
+							<img src="images/fashion_beauty_5.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>韩版黑色小脚牛仔</h3>
+							<p>时尚修身百搭潮男必备</p>
+							<img src="images/fashion_beauty_6.jpg" alt="">
+						</a>
+					</li>
+
+				</ul>
+				<!-- ul.slogan_bottom_2 end -->
+				<ul class="slogan_bottom_3 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>春季尚新</h3>
+							<p>春季尚新， 潮品来袭</p>
+							<img src="images/fashion_beauty_7.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>2017新品</h3>
+							<p>包您焕新潮流男包</p>
+							<img src="images/fashion_beauty_8.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>春暖花开穿春衣</h3>
+							<p>300款春衣美美搭</p>
+							<img src="images/fashion_beauty_9.jpg" alt="">
+						</a>
+					</li>				
+				</ul>
+				<!-- slogan_bottom_3 end -->
+			</div>
+			<!-- slogan_sector_bottom end -->
+		</div>
+		<!-- fashion_beauty end -->
+
+		<div class="slogan_sector electronics">
+			<div class="slogan_sector_top">
+				<h2><i></i>潮电酷玩<span> ELECTRONICS</span></h2>
+				<ul>
+				        
+					<li><a href="">手机</a></li>
+					<li><a href="">iPhone</a></li>
+					<li><a href="">相机</a></li>
+					<li><a href="">数码配件</a></li>
+					<li><a href="">影音电玩</a></li>
+					<li><a href="">生活电器</a></li>
+					<li><a href="">个人护理</a></li>
+					<li><a href="">电脑硬件</a></li>
+					<li><a href="">笔记本</a></li>
+				</ul>
+			</div>
+			<div class="slogan_sector_bottom">
+				<div class="slogan_bottom_1">
+					<div class="banner_slogan">
+						<a href=""><img src="images/electronics.jpg" alt=""></a>
+						<div hidden>
+							<a href=""></a>
+						</div>
+						<div class="msg_move">
+							<div>
+							<a href="">
+								<p>316 超级品牌日 &gt;</p>
+								<p>预售200抵320 &gt;</p>
+								<p>R7 1700 / RX470D &gt;</p>
+							</a>
+							</div>
+						</div>
+					</div>
+					<div class="promo_slogan">
+					  <a href="">
+						<div class="text_promo">
+							<h2>AMD新品首发</h2>
+							<p>Ryzen 7</p>
+						</div>
+						<div>
+							<img src="images/cat_up.png" alt="beauty promo background">
+						</div>
+					  </a>
+					</div>
+				</div>
+				<!-- slogan_bottom_1 end -->
+				<ul class="slogan_bottom_2 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h2>天猫手机馆</h2>
+							<h3>12期分期免息</h3>
+							<p>新品手机钜惠</p>							
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<img src="images/electronics_1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>数码相机</h3>
+							<p>拍立得 性价比款</p>
+							<img src="images/electronics_2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>天猫小家电</h3>
+							<p>爆款优惠抢先占</p>
+							<img src="images/electronics_3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>家用路由器</h3>
+							<p>穿透力强 新家必备</p>
+							<img src="images/electronics_4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>木质箱 低音可调</h3>
+							<p>快乐潮裤家庭首选</p>
+							<img src="images/electronics_5.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>小家电焕新季</h3>
+							<p>戴森最高优惠700元</p>
+							<img src="images/electronics_6.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>AMD新品首发</h3>
+							<p>预售200抵320</p>
+							<img src="images/electronics_7.jpg" alt="">
+						</a>
+					</li>
+
+				</ul>
+				<!-- ul.slogan_bottom_2 end -->
+				
+			</div>
+			<!-- slogan_sector_bottom end -->
+		</div>
+		<!-- electronics end -->
+
+		<div class="ad_2 ad">
+			<a href="">
+				<img src="images/ad_2.jpg" alt="ad 2">
+			</a>
+		</div>
+
+		<div class="slogan_sector grocery_health">
+			<div class="slogan_sector_top">
+				<h2><i></i>居家生活<span> GROCERY &amp; HEALTH</span></h2>
+				<ul>				          
+					<li><a href="">零食</a></li>
+					<li><a href="">牛奶</a></li>
+					<li><a href="">居家饰品</a></li>
+					<li><a href="">保温杯</a></li>
+					<li><a href="">保健品</a></li>
+					<li><a href="">常用药</a></li>
+					<li><a href="">热门图书</a></li>
+					<li><a href="">洗发水</a></li>
+					<li><a href="">卫生巾</a></li>
+					<li><a href="">家庭清洁</a></li>
+					<li><a href="">狗粮</a></li>
+				</ul>
+			</div>
+			<div class="slogan_sector_bottom">
+				<div class="slogan_bottom_1">
+					<div class="banner_slogan">
+						<a href=""><img src="images/grocery_health.jpg" alt=""></a>
+						<div hidden>
+							<a href=""></a>
+						</div>
+						<div class="msg_move">
+							<div>
+							<a href="">
+								<p>第二份仅需1元 &gt;</p>
+								<p>热销爆款买一送一 &gt;</p>
+								<p>1元秒50元券 &gt;</p>
+							</a>
+							</div>
+						</div>
+					</div>
+					<div class="promo_slogan">
+					  <a href="">
+						<div class="text_promo">
+							<h2>家装节生鲜特惠</h2>
+							<p>26-3.2抢购中</p>
+						</div>
+						<div>
+							<img src="images/cat_up.png" alt="beauty promo background">
+						</div>
+					  </a>
+					</div>
+				</div>
+				<!-- slogan_bottom_1 end -->
+				<ul class="slogan_bottom_2 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>春暖花开</h3>
+							<p>踏青带上零食可好</p>
+							<img src="images/grocery_health_1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>大容量一杯双盖</h3>
+							<p>优质不锈钢配杯套</p>
+							<img src="images/grocery_health_2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>拉菲波尔多AOC</h3>
+							<p>官方授权防伪正品</p>
+							<img src="images/grocery_health_3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>高山铁观音口粮茶</h3>
+							<p>安溪地理标志保护产品</p>
+							<img src="images/grocery_health_4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>巧妇收纳秘籍</h3>
+							<p>可节省75%空间</p>
+							<img src="images/grocery_health_5.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>送礼就送闽宝角梳</h3>
+							<p>时尚修身百搭潮男必备</p>
+							<img src="images/grocery_health_6.jpg" alt="">
+						</a>
+					</li>
+
+				</ul>
+				<!-- ul.slogan_bottom_2 end -->
+				<ul class="slogan_bottom_3 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>原味<i>.</i>轻奢</h3>
+							<p>阿木<i>.</i>只做天然沉檀</p>
+							<img src="images/grocery_health_4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>狮子盘香炉</h3>
+							<p>陶瓷盘香炉</p>
+							<img src="images/grocery_health_8.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>哎哟喂坚果巴旦木</h3>
+							<p>壳薄仁脆奶香浓郁</p>
+							<img src="images/grocery_health_9.jpg" alt="">
+						</a>
+					</li>				
+				</ul>
+				<!-- slogan_bottom_3 end -->
+			</div>
+			<!-- slogan_sector_bottom end -->
+		</div>
+		<!-- grocery_health end -->
+
+		<div class="slogan_sector home">
+			<div class="slogan_sector_top">
+				<h2><i></i>打造爱巢<span> HOME</span></h2>
+				<ul>			
+
+					<li><a href="">家具</a></li>
+					<li><a href="">大家电</a></li>
+					<li><a href="">四件套</a></li>
+					<li><a href="">健康电器</a></li>
+					<li><a href="">厨房电器</a></li>
+					<li><a href="">吸顶灯</a></li>
+					<li><a href="">平板电视</a></li>
+					<li><a href="">装修设计</a></li>
+					<li><a href="">跑步机</a></li>
+				</ul>
+			</div>
+			<div class="slogan_sector_bottom">
+				<div class="slogan_bottom_1">
+					<div class="banner_slogan">
+						<a href=""><img src="images/home.jpg" alt=""></a>
+						<div hidden>
+							<a href=""></a>
+						</div>
+						<div class="msg_move">
+							<div>
+							<a href="">
+								<p>建筑装修 百万让利 &gt;</p>
+								<p>最后两天 库存紧张 &gt;</p>
+								<p>门店买一送一 &gt;</p>
+							</a>
+							</div>
+						</div>
+					</div>
+					<div class="promo_slogan">
+					  <a href="">
+						<div class="text_promo">
+							<h2>装修卖爆了</h2>
+							<p>1元抵1000用</p>
+						</div>
+						<div>
+							<img src="images/cat_up.png" alt="beauty promo background">
+						</div>
+					  </a>
+					</div>
+				</div>
+				<!-- slogan_bottom_1 end -->
+				<ul class="slogan_bottom_2 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>小米智能指纹密码</h3>
+							<p>小米品质锁向披靡</p>
+							<img src="images/home_1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>天猫家装节</h3>
+							<p>大家电会场</p>
+							<img src="images/home_2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>春季焕新家</h3>
+							<p>家装节享多重钜惠</p>
+							<img src="images/home_3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>实惠耐用门垫定做</h3>
+							<p>双重纱工艺免洗设计</p>
+							<img src="images/home_4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>家装焕新季</h3>
+							<p>品质小家电</p>
+							<img src="images/home_5.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>天猫家装节</h3>
+							<p>大家电会场</p>
+							<img src="images/home_6.jpg" alt="">
+						</a>
+					</li>
+
+				</ul>
+				<!-- ul.slogan_bottom_2 end -->
+				<ul class="slogan_bottom_3 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>品质小家电</h3>
+							<p>最高领券500元</p>
+							<img src="images/home_7.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>遇见达科他</h3>
+							<p>全棉斜纹四件套</p>
+							<img src="images/home_8.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>中型仓储货架</h3>
+							<p>称重300KG/层</p>
+							<img src="images/home_9.jpg" alt="">
+						</a>
+					</li>		
+					<li>
+						<a href="">
+							<h3>春节开工大吉</h3>
+							<p>家居必备电工配件专场</p>
+							<img src="images/home_10.jpg" alt="">
+						</a>
+					</li>		
+				</ul>
+				<!-- slogan_bottom_3 end -->
+			</div>
+			<!-- slogan_sector_bottom end -->
+		</div>
+		<!-- home end -->
+
+		<div class="ad_3 ad">
+			<a href="">
+				<img src="images/ad_3.jpg" alt="ad 3">
+			</a>
+		</div>
+
+		<div class="slogan_sector outdoor_automotive">
+			<div class="slogan_sector_top">
+				<h2><i></i>户外出行<span> OUTDOOR &amp; AUTOMOTIVE</span></h2>
+				<ul>			
+					<li><a href="">车秒贷</a></li>
+					<li><a href="">皮肤衣</a></li>
+					<li><a href="">运动鞋</a></li>
+					<li><a href="">4s保养</a></li>
+					<li><a href="">行车记录仪</a></li>
+					<li><a href="">轮胎</a></li>
+				</ul>
+			</div>
+			<div class="slogan_sector_bottom">
+				<div class="slogan_bottom_1">
+					<div class="banner_slogan">
+						<a href=""><img src="images/outdoor_automotive.jpg" alt=""></a>
+						<div hidden>
+							<a href=""></a>
+						</div>
+						<div class="msg_move">
+							<div>
+							<a href="">
+								<p>优惠券免费领 &gt;</p>
+								<p>12大牌强强联合 &gt;</p>
+								<p>一站购齐 &gt;</p>
+							</a>
+							</div>
+						</div>
+					</div>
+					<div class="promo_slogan">
+					  <a href="">
+						<div class="text_promo">
+							<h2>天猫开钓节</h2>
+							<p>渔具装备全套底价</p>
+						</div>
+						<div>
+							<img src="images/cat_up.png" alt="beauty promo background">
+						</div>
+					  </a>
+					</div>
+				</div>
+				<!-- slogan_bottom_1 end -->
+				<ul class="slogan_bottom_2 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>好车抢购</h3>
+							<p>款款低价送好礼</p>
+							<img src="images/outdoor_automotive_1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>新品首发</h3>
+							<p>买首发新品赠运动包</p>
+							<img src="images/outdoor_automotive_2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>明星同款炫酷来袭</h3>
+							<p>限量首发， 购新品赠礼</p>
+							<img src="images/outdoor_automotive_3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>新春出游季</h3>
+							<p>车载电子好货</p>
+							<img src="images/outdoor_automotive_4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>天猫开钓节</h3>
+							<p>优惠券免费领</p>
+							<img src="images/outdoor_automotive_5.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>春季海德健身专场</h3>
+							<p>满就送豪礼</p>
+							<img src="images/outdoor_automotive_6.jpg" alt="">
+						</a>
+					</li>
+
+				</ul>
+				<!-- ul.slogan_bottom_2 end -->
+				<ul class="slogan_bottom_3 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>加油卡在线充</h3>
+							<p>全国通用</p>
+							<img src="images/outdoor_automotive_4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>乔丹官方男鞋跑步</h3>
+							<p>轻便防滑</p>
+							<img src="images/outdoor_automotive_8.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>红双喜专业推荐</h3>
+							<p>没好拍，怎么打好球</p>
+							<img src="images/outdoor_automotive_9.jpg" alt="">
+						</a>
+					</li>				
+				</ul>
+				<!-- slogan_bottom_3 end -->
+			</div>
+			<!-- slogan_sector_bottom end -->
+		</div>
+		<!-- outdoor_automotive end -->
+
+		<div class="slogan_sector kids_baby">
+			<div class="slogan_sector_top">
+				<h2><i></i>亲子时光<span> KIDS &amp; BABY</span></h2>
+				<ul>			
+					<li><a href="">童装</a></li>
+					<li><a href="">玩具</a></li>
+					<li><a href="">待产用品</a></li>
+					<li><a href="">文教用品</a></li>
+					<li><a href="">宝宝用品</a></li>
+					<li><a href="">儿童床品</a></li>
+					<li><a href="">奶粉</a></li>
+					<li><a href="">童书</a></li>
+					<li><a href="">纸尿裤</a></li>
+				</ul>
+			</div>
+			<div class="slogan_sector_bottom">
+				<div class="slogan_bottom_1">
+					<div class="banner_slogan">
+						<a href=""><img src="images/kids_baby.jpg" alt=""></a>
+						<div hidden>
+							<a href=""></a>
+						</div>
+						<div class="msg_move">
+							<div>
+							<a href="">
+								<p>满就送 &gt;</p>
+								<p>买2送礼 &gt;</p>
+								<p>满减进行时 &gt;</p>
+							</a>
+							</div>
+						</div>
+					</div>
+					<div class="promo_slogan">
+					  <a href="">
+						<div class="text_promo">
+							<h2>杭派童鞋聚爱童行</h2>
+							<p>关爱留守儿童公益活动</p>
+						</div>
+						<div>
+							<img src="images/cat_up.png" alt="beauty promo background">
+						</div>
+					  </a>
+					</div>
+				</div>
+				<!-- slogan_bottom_1 end -->
+				<ul class="slogan_bottom_2 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>春季焕新再出发</h3>
+							<p>海量新款等你来</p>
+							<img src="images/kids_baby_1.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>基诺浦童鞋专辑</h3>
+							<p>机能鞋先行者</p>
+							<img src="images/kids_baby_2.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>怀孕也要做女王</h3>
+							<p>孕妈防辐射服专场</p>
+							<img src="images/kids_baby_3.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>新春开年惠</h3>
+							<p>给宝宝贴心呵护</p>
+							<img src="images/kids_baby_4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>春装新品</h3>
+							<p>0-4岁婴幼儿</p>
+							<img src="images/kids_baby_5.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>踏春出游狂欢季</h3>
+							<p>春季新品舒适透气</p>
+							<img src="images/kids_baby_6.jpg" alt="">
+						</a>
+					</li>
+
+				</ul>
+				<!-- ul.slogan_bottom_2 end -->
+				<ul class="slogan_bottom_3 slogan_bottom_right">
+					<li>
+						<a href="">
+							<h3>学霸必备</h3>
+							<p>精选文具</p>
+							<img src="images/kids_baby_4.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>四季通用方便出行</h3>
+							<p>轻便易折叠方便外出</p>
+							<img src="images/kids_baby_8.jpg" alt="">
+						</a>
+					</li>
+					<li>
+						<a href="">
+							<h3>七波辉开学上新</h3>
+							<p>舒适运动鞋系列</p>
+							<img src="images/kids_baby_9.jpg" alt="">
+						</a>
+					</li>				
+				</ul>
+				<!-- slogan_bottom_3 end -->
+			</div>
+			<!-- slogan_sector_bottom end -->
+		</div>
+		<!-- kids_baby end -->
+
+		<div class="ad_4 ad">
+			<a href="">
+				<img src="images/ad_4.jpg" alt="ad 4">
+			</a>
+		</div>
+
+		<div class="guess_u_like">
+			<h2><i>___</i><img src="images/like.png" alt="guess_u_like"> 猜你喜欢 <i>___</i></h2>
+			<ul class="guess_list">
+				<li>
+					<a href="">
+						<img src="images/guess_1.jpg" alt="guess 1">
+						<p>[热销]HLA/海澜之家水洗休闲裤春季热卖男装微弹修身裤子</p>
+						<span><strong>¥168</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_2.jpg" alt="guess 2">
+						<p>[热销]New Balance/NB 373系列男鞋女鞋复古跑鞋休闲运动鞋</p>
+						<span><strong>¥363</strong>.3</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_3.jpg" alt="guess 3">
+						<p>[热销]短款打底衫女长袖春装半高领毛衣女套头学生宽松上衣小衫春季外</p>
+						<span><strong>¥68</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_4.jpg" alt="guess 4">	
+					</a>
+					<a href="">
+						<img class="cat_bg" src="images/cat_bg.png" alt="">
+						<img class="shop_logo" src="images/crocodile.jpg" alt="">
+						<h3>鳄鱼服饰官方旗舰店</h3>
+					</a>
+					<div>4.4万粉丝</div>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_5.jpg" alt="guess 5">
+						<p>[热销]冬韩国魔术裤黑色打底裤加绒女外穿铅笔裤小脚裤加厚紧身裤长裤</p>
+						<span><strong>¥69</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_6.jpg" alt="guess 6">
+						<p>[热销]台湾进口 自然素材焦糖黑糖饼干早餐代餐饼干办公室休闲零食</p>
+						<span><strong>¥39</strong>.9</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_7.jpg" alt="guess 7">
+						<p>[热销]小梅的零食 蜜饯零食大礼包 640g 话梅组合果脯杨梅乌梅梅子包</p>
+						<span><strong>¥32</strong>.9</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_8.jpg" alt="guess 8">
+						<p>[热销]Apple/苹果 iPhone 7</p>
+						<span><strong>¥5388</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_9.jpg" alt="guess 9">	
+					</a>
+					<a href="">
+						<img class="cat_bg" src="images/cat_bg.png" alt="">
+						<img class="shop_logo" src="images/maserati.jpg" alt="">
+						<h3>玛莎拉蒂官方旗舰店</h3>
+					</a>
+					<div>5.9万粉丝</div>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_10.jpg" alt="guess 10">
+						<p>[热销]嘉宝吸盘置物架卫生间置物架壁挂收纳厕所浴室置物架吸壁式免打</p>
+						<span><strong>¥41</strong>.5</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_11.jpg" alt="guess 11">
+						<p>[热销]沂蒙公社无添加农家自制柿子饼赛陕西特产富平霜降吊柿饼子</p>
+						<span><strong>¥26</strong>.9</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_12.jpg" alt="guess 12">
+						<p>[热销]佑游游泳衣女保守遮肚小胸显瘦聚拢钢托连体裙式大码性感温泉泳衣</p>
+						<span><strong>¥49</strong>.9</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_13.jpg" alt="guess 13">
+						<p>毛绒加厚冬季双人单人学生宿舍珊瑚绒子法兰绒床单单件冬天保暖</p>
+						<span><strong>¥49</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_14.jpg" alt="guess 14">		
+					</a>
+					<a href="">
+						<img class="cat_bg" src="images/cat_bg.png" alt="">
+						<img class="shop_logo" src="images/7wolf.jpg" alt="">
+						<h3>七匹狼官方旗舰店</h3>
+					</a>
+					<div>158.0万粉丝</div>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_15.jpg" alt="guess 15">
+						<p>[热销]泡棉呼啦圈瘦腰收腹女式成人减肥加重可拆卸呼啦圈健身瘦身圈</p>
+						<span><strong>¥39</strong>.9</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_16.jpg" alt="guess 16">
+						<p>[热销]真皮儿童雪地靴秋冬款棉靴子2016新款男童宝宝棉鞋冬季</p>
+						<span><strong>¥79</strong>.8</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_17.jpg" alt="guess 17">
+						<p>[热销]儿童男童毛衣开衫套头外套加厚打底衫纯棉高领针织童装中大童春装</p>
+						<span><strong>¥59</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_18.jpg" alt="guess 18">
+						<p>[热销]小龙哈彼婴儿毛毯四季空调毯法兰绒毯子卡通盖毯宝宝午睡毯儿童</p>
+						<span><strong>¥29</strong>.9</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_19.jpg" alt="guess 19">	
+					</a>
+					<a href="">
+						<img class="cat_bg" src="images/cat_bg.png" alt="">
+						<img class="shop_logo" src="images/plory.jpg" alt="">
+						<h3>plory官方旗舰店</h3>
+					</a>
+					<div>38.2万粉丝</div>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_20.jpg" alt="guess 20">
+						<p>[热销]觉先生旗下品牌 鸭嘴兽天鹅绒四件套卡通1.5m1.8米法兰绒珊瑚绒</p>
+						<span><strong>¥148</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_21.jpg" alt="guess 21">
+						<p>[热销]新边界坚果零食奶油味纸皮巴旦木干果大扁桃仁新疆巴达木</p>
+						<span><strong>¥22</strong>.99</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_22.jpg" alt="guess 22">
+						<p>[热销] 冬季男装外套韩版加绒加厚男士毛衣圆领套头打底针织衫男款线衣</p>
+						<span><strong>¥78</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_23.jpg" alt="guess 23">
+						<p>[热销]健元堂薏米红豆燕麦全麦饼干五谷杂粮粗粮代餐无蔗糖健康零食</p>
+						<span><strong>¥26</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_24.jpg" alt="guess 24">
+						<p>[热销][3条装]永亮毛巾纯棉成人洗脸面巾家用柔软超强吸水情侣男女通用</p>
+						<span><strong>¥39</strong>.9</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_25.jpg" alt="guess 25">
+						<p>[热销]Lilbetter棉衣男外套 短款修身棉袄青年冬季休闲情侣装男士棉服潮</p>
+						<span><strong>¥297</strong>.9</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_26.jpg" alt="guess 26">
+						<p>[热销]俪伴秋冬季毛呢短裙显瘦A字裙百搭高腰蓬蓬裙半身裙春季伞裙</p>
+						<span><strong>¥69</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_27.jpg" alt="guess 27">
+						<p>[热销] 婴儿连体衣秋冬装外出服加厚棉衣保暖宝宝连体衣女0-1岁婴儿</p>
+						<span><strong>¥139</strong>.0</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_28.jpg" alt="guess 28">
+						<p>[热销]美曼塑料衣架加厚衣挂衣撑防滑衣架服装店无痕成人家用衣柜衣服</p>
+						<span><strong>¥28</strong>.4</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_29.jpg" alt="guess 29">
+						<p>[热销]蒙古包蚊帐三开门1.8m床双人有底1.5米支架拉链家用1.2m学生宿舍</p>
+						<span><strong>¥42</strong>.8</span>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<img src="images/guess_30.jpg" alt="guess 30">
+						<p>[热销]iPhone7手机壳苹果7Plus电镀渐变套i7新款女防摔七P韩国潮男</p>
+						<span><strong>¥25</strong>.0</span>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- guess_u_like end -->
+	</main>
+
+	<div class="end">
+		<img src="images/end.png" alt="main end">
+	</div>
+
+	<div class="page_bottom">
+		<ul class="guarantee_service">
+			<li>
+				<a href="">
+					<img src="images/quality.png" alt="">
+					<h3>品质保障</h3>
+					<p>品质护航 购物无忧</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/return.png" alt="">
+					<h3>七天无理由退货</h3>
+					<p>为您提供售后无忧保障</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/service.png" alt="">
+					<h3>特色服务体验</h3>
+					<p>为您呈现不一样的服务</p>
+				</a>
+			</li>
+			<li>
+				<a href="">
+					<img src="images/help_center.png" alt="">
+					<h3>帮助中心</h3>
+					<p>您的购物指南</p>
+				</a>
+			</li>
+		</ul>
+		<ul class="bottom_nav">
+			<li>
+				<h4>购物指南</h4>
+				<ul>
+					<li><a href="" title="">免费注册</a></li>
+					<li><a href="" title="">开通支付宝</a></li>
+					<li><a href="" title="">支付宝充值</a></li>
+				</ul>
+			</li>
+			<li>
+				<h4>天猫保障</h4>
+				<ul>
+					<li><a href="" title="">发票保障</a></li>
+					<li><a href="" title="">售后规则</a></li>
+					<li><a href="" title="">缺货赔付</a></li>
+				</ul>
+			</li>
+			<li>
+				<h4>支付方式</h4>
+				<ul>
+					<li><a href="" title="">快捷支付</a></li>
+					<li><a href="" title="">信用卡</a></li>
+					<li><a href="" title="">余额宝</a></li>
+					<li><a href="" title="">蚂蚁花呗</a></li>
+					<li><a href="" title="">货到付款</a></li>
+				</ul>
+			</li>
+			<li>
+				<h4>商家服务</h4>
+				<ul>
+					<li><a href="" title="">商家入驻</a></li>
+					<li><a href="" title="">商家中心</a></li>
+					<li><a href="" title="">天猫智库</a></li>
+					<li><a href="" title="">天猫规则</a></li>
+					<li><a href="" title="">物流服务</a></li>
+					<li><a href="" title="">喵言喵语</a></li>
+					<li><a href="" title="">运营服务</a></li>
+				</ul>
+			</li>
+			<li>
+				<h4>手机天猫</h4>
+				<ul>
+					<li><a href="" title=""><img src="images/bottom_app.png" alt="Tmall app"></a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<footer>
+		<ul class="footer_nav">			        
+			<li><a href="" title="">关于天猫</a></li>
+			<li><a href="" title="">帮助中心</a></li>
+			<li><a href="" title="">开放平台</a></li>
+			<li><a href="" title="">诚聘英才</a></li>
+			<li><a href="" title="">联系我们</a></li>
+			<li><a href="" title="">网站合作</a></li>
+			<li><a href="" title="">法律声明及隐私权政策</a></li>
+			<li><a href="" title="">知识产权</a></li>
+			<li><a href="" title="">廉正举报</a></li>
+			<li><a href="" title="">规则意见征集</a></li>
+		</ul>
+		<ul class="ali_group">
+			<li><a href="" title="">阿里巴巴集团</a></li>
+			<li><a href="" title="">淘宝网</a></li>
+			<li><a href="" title="">天猫</a></li>
+			<li><a href="" title="">聚划算</a></li>
+			<li><a href="" title="">全球速卖通</a></li>
+			<li><a href="" title="">阿里巴巴国际交易市场</a></li>
+			<li><a href="" title="">1688</a></li>
+			<li><a href="" title="">阿里妈妈</a></li>
+			<li><a href="" title="">飞猪</a></li>
+			<li><a href="" title="">阿里云计算</a></li>
+			<li><a href="" title="">YunOS</a></li>
+			<li><a href="" title="">阿里通信</a></li>
+			<li><a href="" title="">万网</a></li>
+			<li><a href="" title="">高德</a></li>
+			<li><a href="" title="">UC</a></li>
+			<li><a href="" title="">友盟</a></li>
+			<li><a href="" title="">虾米</a></li>
+			<li><a href="" title="">阿里星球</a></li>
+			<li><a href="" title="">来往</a></li>
+			<li><a href="" title="">钉钉</a></li>
+			<li><a href="" title="">支付宝</a></li>
+		</ul>
+		<p>		 
+			<span>增值电信业务经营许可证： 浙B2-20110446</span>
+			<span>网络文化经营许可证：浙网文[2015]0295-065号</span>
+			<span>互联网药品交易服务资格证书 国A20150001</span>
+		</p>
+		<p>
+			<span>互联网药品信息服务资质证书编号：浙-（经营性）-2012-0005</span>
+			<span><a href=""><img src="images/police.png" alt="to police"></a> 浙公网安备 33010002000120号</span>
+		</p>
+		<p>&copy;  2003-2017 TMALL.COM 版权所有</p>
+		<p>
+			<a href=""><img src="images/gov_1.jpg" alt=""></a>
+			<a href=""><img src="images/gov_2.jpg" alt=""></a>
+		</p>
+	</footer>
+
+	<ul class="sidebar sidebar_right">
+		<li>
+			<a href=""><img src="images/cat_2.png" alt=""></a>
+			<p id="p1" hidden>我的特权</p>
+		</li>
+		<li>
+			<a href=""><img src="images/cart_2.png" alt=""><span>购物车</span></a>
+		</li>
+		<li>
+			<a href=""><img src="images/asset.png" alt=""></a>
+			<p hidden>我的资产</p>
+		</li>
+		<li>
+			<a href=""><img src="images/brand_2.png" alt=""></a>
+			<p hidden>我关注的品牌</p>
+		</li>
+		<li>
+			<a href=""><img src="images/favorate_2.png" alt=""></a>
+			<p hidden>我的收藏</p>
+		</li>
+		<li>
+			<a href=""><img src="images/visited.png" alt=""></a>
+			<p hidden>我看过的</p>
+		</li>
+		<li>
+			<a href=""><img src="images/topup.png" alt=""></a>
+			<p hidden>我要充值</p>
+		</li>
+		<li>
+			<a href=""><img src="images/feedback.png" alt=""></a>
+			<p hidden>用户反馈</p>
+		</li>
+		<li>
+			<a href=""><img src="images/app_2.png" alt=""></a>
+			<img hidden src="images/app.png" alt="">
+		</li>
+		<li>
+			<a href=""><img hidden src="images/top.png" alt=""></a>
+			<p hidden>返回顶部</p>
+		</li>
+	</ul>
+
+	<ul hidden class="sidebar sidebar_left">
+		<li><a title="">导航</a></li>
+		<li><a href="" title="">美丽人生</a></li>
+		<li><a href="" title="">潮电酷玩</a></li>
+		<li><a href="" title="">居家生活</a></li>
+		<li><a href="" title="">打造爱巢</a></li>
+		<li><a href="" title="">户外出行</a></li>
+		<li><a href="" title="">亲子时光</a></li>
+		<li><a href="" title="">猜你喜欢</a></li>
+		<li><a href="#" title=""><img src="images/to_top.png"> 顶部</a></li>
+	</ul>
+
+	<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>
