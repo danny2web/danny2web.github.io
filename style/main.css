@@ -261,6 +261,7 @@ ul li.service_help {
 	position: relative;
 	top: 1px;
 	z-index: 1;
+	cursor: pointer;
 }
 .search_area ul {
 	padding-left: 0;
@@ -369,12 +370,13 @@ header nav>ul li:nth-child(2) {
 	position: absolute;
 	top: 0px;
 	left: 190px;
-	width: 570px;
+	width: 600px;
 	background-color: #fff;
 }
 .category h4 + ul[hidden] {
 	position: relative;
 	z-index: 100;
+	height: 496px;
 }
 .category h4 + ul h3 {
 	float: left;
@@ -390,29 +392,29 @@ header nav>ul li:nth-child(2) {
 	padding-bottom: 10px;
 }
 .category>ul>li:hover>ul.brand_logo {
-	left: 800px;
-	width: 204px;
+	left: 830px;
+	width: 165px;
+	height: 476px;
 	padding: 10px;
 	background-color: #eee;
 }
-.category>ul>li:hover>ul.brand_logo li {
-	/*width: 102px;*/
-}
 .category>ul>li:hover>ul.brand_logo li img {
-	width: 90px;
+	width: 70px;
 	float: left;
 	padding: 5px;
 	background-color: #fff;
 	border: 1px solid #eee;
 }
 .category>ul>li:hover>ul.brand_logo li:last-child img {
-	width: 192px;
+	width: 152px;
+	margin-top: 10px;
 }
 .category li li li {
 	float: left;
 	margin: 0 15px 0 0;
 	height: 25px;
 }
+
 /* banner slide 轮番图 */
 .banner_wrapper {
 	padding-top: 0;
@@ -467,7 +469,7 @@ header nav>ul li:nth-child(2) {
 	font-family: "微软雅黑";
 	text-align: center;
 	/*margin-bottom: 50px;*/
-	opacity: 0.50;
+	/*opacity: 0.90;*/
 	line-height: 25px;
 	border: 1px solid #ccc;
 }
@@ -492,8 +494,8 @@ header nav>ul li:nth-child(2) {
 	height: 495px;
 }
 .banner_wrapper li a.banner_sm_top img, .banner_wrapper li a.banner_sm_bottom img {
-	width: 110px;
-	height: 160px;
+	width: 100%;
+	height: 100%;
 }
 /* 大banner底部的5个圆框，在鼠标悬停时，显示对应图片并背景变白*/
 .banner_wrapper>div {
@@ -751,7 +753,7 @@ div.promo_voucher {
 	position: absolute;
 	top: 0;
 	left: 0;
-	background: rgba(0,0,0,0.85);
+	background: rgba(0,0,0,0.75);
 	width: 120px;
 	height: 108px;
 	text-align: center;

@@ -7,11 +7,11 @@
 
 $(function(){
 
-	// 鼠标不滑过时banner动画自动播放，鼠标滑过时停止播放，对应hover(fun1, fun2);
+	// 轮番图：鼠标不滑过时banner动画自动播放，鼠标滑过时停止播放，对应hover(fun1, fun2);
 	//   fun1 逐个显示图片，index==len时index设置为0循环 setInterval
 	// 下方5个小圆点，鼠标悬停在其上时分别显示对应index的图片，并停止动画
 	var addTimer = null;
-	var index = 0;
+	var index = 1;
 	var $banner_wrapper = $(".banner_wrapper");
 	var $banner_li = $banner_wrapper.find("li");
 	// $banner_li.hide();
@@ -33,10 +33,11 @@ $(function(){
 		}
 	}, function () {
 		addTimer = setInterval(function () {
-			showImg(index);
+			showImg(index);			
+			console.log('index: ' + index);
 			index++;
 			if (index == len) { index = 0; }
-		}, 2500);
+		}, 5000);
 	}).mouseleave();
 
 
@@ -110,14 +111,17 @@ $(function(){
 	var $live_big_img = $(".poster_big");
 	var $play_button = $(".live_poster_big img").filter(":not('.poster_big')");
 	var live_video =  document.getElementById('live_video');
+	var loading = "images/loading2.gif";
 	$play_button.click(function () {
-		var big_poster_src = $live_big_img.attr('src');
-		big_poster_num = big_poster_src.split('.')[0].slice(-1);
-		var live_src = "images/live_" + big_poster_num + ".mp4";
-		live_video.setAttribute('src', live_src);
-		$live_big.hide();
-		live_video.style.display = "block";
-		live_video.play();
+		$live_big_img.attr('src', loading);
+		$(this).hide();
+		// var big_poster_src = $live_big_img.attr('src');
+		// big_poster_num = big_poster_src.split('.')[0].slice(-1);
+		// var live_src = "images/live_" + big_poster_num + ".mp4";
+		// live_video.setAttribute('src', live_src);
+		// $live_big.hide();
+		// live_video.style.display = "block";
+		// live_video.play();
 	});
 	var $live_poster_small = $("ul.live_poster_small");
 	var $live_poster_li = $live_poster_small.find('li')
@@ -143,10 +147,11 @@ $(function(){
 	$(".live_poster_big").mouseenter(function () {
 		can_Play($(this), "poster_big");
 	});
-	// 直播区域：鼠标滑过下方小缩略图时，上方直播屏幕图片换成对应的直播
 
+	// 直播区域：鼠标滑过下方小缩略图时，上方直播屏幕图片换成对应的直播
 	var $live_title = $(".live_poster_big h2");
 	$live_poster_li.mouseenter(function () {
+		$play_button.show();
 		var $img_poster_small = $(this).find('.poster_small');
 		var $img_src = $img_poster_small.attr('src');
 		var $img_class = $img_poster_small.attr('class');
@@ -154,6 +159,7 @@ $(function(){
 		$live_title.text($(this).find('h4').text());
 		can_Play($(this), $img_class);
 	});
+
 	//  直播区域的缩略图的点击向左或向右滑动效果
 	var next = document.createElement('div');
 	next.setAttribute('class', "prev_next");
@@ -197,6 +203,7 @@ $(function(){
 	prev.onclick = function () {
 		$live_poster_small.animate({"left":"0px"}, 500);
 	};
+
 	// 直播区域底部的预告滚动效果
 	var $notice_right = $(".notice_right");
 	function notice_repeat($elem, msg_total, initial_xpos, step) {
@@ -344,9 +351,6 @@ $(function(){
 		scroll_Top = 1700 + li_idx*550;
 		document.body.scrollTop = scroll_Top;
 	});
-
-	var header = document.getElementsByTagName('header')[0];
-	// alert($(document).width());
 
 	// for (var i = 0; i < 5; i++) {
 	// 	setTimeout(function () {
