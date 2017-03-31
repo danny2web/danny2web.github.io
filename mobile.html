@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name='viewport' content='width=device-width, initial-scale=1, max-scale=1, user-scalable=no'>
+		<title>响应式布局</title>
+		<style type='text/css'>
+			@media screen and (min-width:900px) {
+			  .wrapper {
+			    width: 90%;
+			    margin: 0 auto;
+			  }
+			  .content {
+			  	width: 60%;
+			  	padding: 5%;
+			  }
+			  .sidebar {
+			  	width: 30%;
+			  	float: right;
+			  }
+			  .footer {
+			  	width: 80%;
+			  	padding: 8% 5%;
+			  	margin-bottom: 10px;
+			  }
+			}
+			@media screen and (max-width:500px) {
+				.content {
+					width: auto;
+					margin: 20px 0;
+				}
+				.sidebar {
+					width: 100%;
+				}
+			}
+			.content {
+				background-color: #f00;
+			  	height: 300px;
+			}
+			.sidebar {
+				background-color: #0f0;
+			  	height: 200px;
+			}
+			.footer {
+				background-color: #00f;
+				height: 100px;
+			}
+			img {
+				max-width: 30%;
+				width: 80%;
+				height: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="content">
+				<img src='brand_3.jpg' alt='baby chair'>
+			</div>
+			<div class="sidebar"></div>
+			<div class="footer"></div>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+</body>
+</html>
