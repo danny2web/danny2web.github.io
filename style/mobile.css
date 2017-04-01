@@ -1,0 +1,22 @@
+html {
+	font-size: 62.5%;
+}
+body {
+	font-size: 1.6rem;
+}
+.header_top, .logo_search, header nav, .display_area{
+	display: none;
+}
+.header_mobile {
+	display: block;
+	position: absolute;
+	z-index: 10;
+	width: 300px;
+	margin: 10px auto;
+}
+.header_mobile input {
+	display: inline-block;
+	width: 400px;
+	height: 100px;
+	background: rgba(200,200,200,0.5);
+}

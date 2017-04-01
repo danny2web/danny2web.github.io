@@ -2,12 +2,20 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name='viewport' content='width=device-width'>
+	<meta name='screen-orientation' content='portrait'>
 	<title>周其志 demo</title>
 	<link rel="stylesheet" type="text/css" href="style/reset.css">
 	<link rel="stylesheet" type="text/css" href="style/main.css">
+	<!-- <link rel='stylesheet' type='text/css' href='style/mobile.css' media='screen and (max-width:500px)'> -->
 </head>
 <body>
 	<header>
+	    <div class="header_mobile" hidden>
+	    	<a class="mobile_all_category" href="#"></a>
+	    	<input type="text" name="search" placeholder="搜索商品/店铺">
+	    	<a href="#">登陆</a>
+	    </div>
 		<div class="header_top">
 			<span>喵，欢迎来天猫</span>
 			<a href="https:login.tmall.com/?spm=875.7931836/B.a2226mz.1.JMe35G&redirectURL=https%3A%2F%2Fwww.tmall.com%2F">请登录</a>

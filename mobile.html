@@ -4,61 +4,30 @@
 		<meta name='viewport' content='width=device-width, initial-scale=1, max-scale=1, user-scalable=no'>
 		<title>响应式布局</title>
 		<style type='text/css'>
-			@media screen and (min-width:900px) {
-			  .wrapper {
-			    width: 90%;
-			    margin: 0 auto;
-			  }
-			  .content {
-			  	width: 60%;
-			  	padding: 5%;
-			  }
-			  .sidebar {
-			  	width: 30%;
-			  	float: right;
-			  }
-			  .footer {
-			  	width: 80%;
-			  	padding: 8% 5%;
-			  	margin-bottom: 10px;
-			  }
+			body {
+				margin: 0;
+				padding: 0;
 			}
-			@media screen and (max-width:500px) {
-				.content {
-					width: auto;
-					margin: 20px 0;
-				}
-				.sidebar {
-					width: 100%;
-				}
+			.hide {
+				display: none;
 			}
-			.content {
-				background-color: #f00;
-			  	height: 300px;
-			}
-			.sidebar {
-				background-color: #0f0;
-			  	height: 200px;
-			}
-			.footer {
-				background-color: #00f;
-				height: 100px;
-			}
-			img {
-				max-width: 30%;
-				width: 80%;
-				height: auto;
-			}
+
 		</style>
 	</head>
 	<body>
-		<div class="wrapper">
-			<div class="content">
-				<img src='brand_3.jpg' alt='baby chair'>
-			</div>
-			<div class="sidebar"></div>
-			<div class="footer"></div>
-		</div>
+		<ul id="list">
+			<li><img class="delete" src="images/brand_1_3.jpg"></li>
+			<li id="two"><img class="delete" src="images/goelia.jpg"></li>
+			<li><img class="delete" src="images/man_sports_10.jpg"></li>
+		</ul>
+
+		<script type='text/javascript' src='js/zepto.js'></script>
+		<script type='text/javascript' src='js/touch.js'></script>
+		<script type='text/javascript'>
+			$('#list li').swipe(function() {
+				$('.delete', this).hide();
+			});
+		</script>
 	</body>
 </html>
 
