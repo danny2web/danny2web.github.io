@@ -1,12 +1,8 @@
 
-// 动画，是一个图标 slideUp()
-// 每一个li的位置都是relative，动画图标position：absolute
-// li.onmouseover = function () {
-// 	icon.slideUp();
-// }
-
 $(function(){
-
+	$('#search_button').click(function(){
+		alert('亲，还没要到天猫的大神们的接口，暂时搜不了哦 。。。');
+	});
 	// 轮番图：鼠标不滑过时banner动画自动播放，鼠标滑过时停止播放，对应hover(fun1, fun2);
 	//   fun1 逐个显示图片，index==len时index设置为0循环 setInterval
 	// 下方5个小圆点，鼠标悬停在其上时分别显示对应index的图片，并停止动画
@@ -115,13 +111,9 @@ $(function(){
 	$play_button.click(function () {
 		$live_big_img.attr('src', loading);
 		$(this).hide();
-		// var big_poster_src = $live_big_img.attr('src');
-		// big_poster_num = big_poster_src.split('.')[0].slice(-1);
-		// var live_src = "images/live_" + big_poster_num + ".mp4";
-		// live_video.setAttribute('src', live_src);
-		// $live_big.hide();
-		// live_video.style.display = "block";
-		// live_video.play();
+		setTimeout(function(){
+			$live_title.text('亲，暂时找不到直播资源，下次再看吧');
+		}, 1000);
 	});
 	var $live_poster_small = $("ul.live_poster_small");
 	var $live_poster_li = $live_poster_small.find('li')
@@ -226,17 +218,7 @@ $(function(){
 	setInterval(function () {
 		notice_repeat($moving_msg, 3, 0, -30);
 	}, 3000);
-	// function notice_repeat() {
-	// 	var top = parseInt($notice_right.css('top'));
-	// 	console.log($notice_right.height());
-	// 	if (!top) { top = -8; }
-	// 	if (top <= -248) { 
-	// 		$notice_right.animate({'top': "-8px"}, 1000); 
-	// 	} else {
-	// 		$notice_right.animate({'top': "+=" + (-63) + "px"}, 1000);
-	// 	}
-	// }
-	
+
 
 	// brand_promo展示区域的叠加在品牌图片上的div全部隐藏，在mouseenter时display
 	$(".brand_promo li .promo_voucher").hide();
@@ -351,11 +333,4 @@ $(function(){
 		scroll_Top = 1700 + li_idx*550;
 		document.body.scrollTop = scroll_Top;
 	});
-
-	// for (var i = 0; i < 5; i++) {
-	// 	setTimeout(function () {
-	// 		console.log(i);
-	// 	}, 1000*i);
-	// }
-		
 });
